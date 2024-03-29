@@ -1,0 +1,63 @@
+---
+title: Nonce
+description: Display the nonce of an account.
+component: true
+wagmi:
+  link: https://wagmi.sh/react/hooks/useAccount
+---
+
+<ComponentPreview
+  name="nonce-demo"
+  className="[&_.preview>[data-orientation=vertical]]:sm:max-w-[70%]"
+/>
+
+## Installation
+
+<Tabs defaultValue="cli">
+
+<TabsList>
+  <TabsTrigger value="cli">CLI</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
+
+```bash
+npx buidl-cli@latest add nonce
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps>
+
+<Step>Install the following components:</Step>
+
+- [ErrorMessage](/docs/components/error-message)
+
+<Step>Install the following shadcn/ui components:</Step>
+
+- [Skeleton](https://ui.shadcn.com/docs/components/skeleton)
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="nonce" />
+
+</Steps>
+
+</TabsContent>
+
+</Tabs>
+
+## Usage
+
+```tsx
+import { Nonce } from "@/registry/default/buidl/nonce"
+```
+
+```tsx
+<Nonce />
+<Nonce chainId={1} />
+<Nonce address="0x761d584f1C2d43cBc3F42ECd739701a36dFFAa31" />
+```

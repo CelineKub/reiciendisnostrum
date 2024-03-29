@@ -1,0 +1,528 @@
+[
+  {
+    "name": "address",
+    "dependencies": [
+      "wagmi"
+    ],
+    "registryDependencies": [
+      "toast"
+    ],
+    "files": [
+      "buidl/address.tsx"
+    ],
+    "type": "components:buidl"
+  },
+  {
+    "name": "balance",
+    "dependencies": [
+      "wagmi"
+    ],
+    "registryDependencies": [
+      "skeleton",
+      "error-message"
+    ],
+    "files": [
+      "buidl/balance.tsx"
+    ],
+    "type": "components:buidl"
+  },
+  {
+    "name": "block-explorer-link",
+    "dependencies": [
+      "wagmi"
+    ],
+    "files": [
+      "buidl/block-explorer-link.tsx"
+    ],
+    "type": "components:buidl"
+  },
+  {
+    "name": "block-number",
+    "dependencies": [
+      "wagmi"
+    ],
+    "registryDependencies": [
+      "skeleton",
+      "error-message"
+    ],
+    "files": [
+      "buidl/block-number.tsx"
+    ],
+    "type": "components:buidl"
+  },
+  {
+    "name": "nonce",
+    "dependencies": [
+      "wagmi"
+    ],
+    "registryDependencies": [
+      "skeleton",
+      "error-message"
+    ],
+    "files": [
+      "buidl/nonce.tsx"
+    ],
+    "type": "components:buidl"
+  },
+  {
+    "name": "transaction",
+    "dependencies": [
+      "wagmi"
+    ],
+    "registryDependencies": [
+      "skeleton",
+      "error-message"
+    ],
+    "files": [
+      "buidl/transaction.tsx"
+    ],
+    "type": "components:buidl"
+  },
+  {
+    "name": "transaction-status",
+    "dependencies": [
+      "wagmi"
+    ],
+    "registryDependencies": [
+      "skeleton",
+      "error-message"
+    ],
+    "files": [
+      "buidl/transaction-status.tsx"
+    ],
+    "type": "components:buidl"
+  },
+  {
+    "name": "fee-data",
+    "dependencies": [
+      "wagmi"
+    ],
+    "registryDependencies": [
+      "skeleton",
+      "error-message"
+    ],
+    "files": [
+      "buidl/fee-data.tsx"
+    ],
+    "type": "components:buidl"
+  },
+  {
+    "name": "sign-message-button",
+    "dependencies": [
+      "wagmi"
+    ],
+    "registryDependencies": [
+      "button",
+      "error-message"
+    ],
+    "files": [
+      "buidl/sign-message-button.tsx"
+    ],
+    "type": "components:buidl"
+  },
+  {
+    "name": "blockie",
+    "dependencies": [
+      "wagmi",
+      "ethereum-blockies-base64"
+    ],
+    "registryDependencies": [
+      "skeleton"
+    ],
+    "files": [
+      "buidl/blockie.tsx"
+    ],
+    "type": "components:buidl"
+  },
+  {
+    "name": "ens-avatar",
+    "dependencies": [
+      "wagmi"
+    ],
+    "registryDependencies": [
+      "blockie",
+      "skeleton"
+    ],
+    "files": [
+      "buidl/ens-avatar.tsx"
+    ],
+    "type": "components:buidl"
+  },
+  {
+    "name": "ens-name",
+    "dependencies": [
+      "wagmi"
+    ],
+    "registryDependencies": [
+      "address",
+      "skeleton"
+    ],
+    "files": [
+      "buidl/ens-name.tsx"
+    ],
+    "type": "components:buidl"
+  },
+  {
+    "name": "ens-address",
+    "dependencies": [
+      "wagmi"
+    ],
+    "registryDependencies": [
+      "address",
+      "skeleton",
+      "error-message"
+    ],
+    "files": [
+      "buidl/ens-address.tsx"
+    ],
+    "type": "components:buidl"
+  },
+  {
+    "name": "image-ipfs",
+    "dependencies": [
+      "wagmi"
+    ],
+    "registryDependencies": [
+      "skeleton",
+      "error-message"
+    ],
+    "files": [
+      "buidl/image-ipfs.tsx"
+    ],
+    "type": "components:buidl"
+  },
+  {
+    "name": "is-wallet-connected",
+    "dependencies": [
+      "wagmi"
+    ],
+    "files": [
+      "buidl/is-wallet-connected.tsx"
+    ],
+    "type": "components:buidl"
+  },
+  {
+    "name": "is-wallet-disconnected",
+    "dependencies": [
+      "wagmi"
+    ],
+    "files": [
+      "buidl/is-wallet-disconnected.tsx"
+    ],
+    "type": "components:buidl"
+  },
+  {
+    "name": "wallet-connect",
+    "dependencies": [
+      "wagmi"
+    ],
+    "registryDependencies": [
+      "button",
+      "dialog"
+    ],
+    "files": [
+      "buidl/wallet-connect.tsx"
+    ],
+    "type": "components:buidl"
+  },
+  {
+    "name": "wallet-disconnect",
+    "dependencies": [
+      "wagmi"
+    ],
+    "registryDependencies": [
+      "button"
+    ],
+    "files": [
+      "buidl/wallet-disconnect.tsx"
+    ],
+    "type": "components:buidl"
+  },
+  {
+    "name": "erc20-balance",
+    "dependencies": [
+      "wagmi"
+    ],
+    "registryDependencies": [
+      "skeleton",
+      "error-message"
+    ],
+    "files": [
+      "buidl/erc20/erc20-balance.tsx"
+    ],
+    "folder": "erc20",
+    "type": "components:buidl"
+  },
+  {
+    "name": "erc20-decimals",
+    "dependencies": [
+      "wagmi"
+    ],
+    "registryDependencies": [
+      "skeleton",
+      "error-message"
+    ],
+    "files": [
+      "buidl/erc20/erc20-decimals.tsx"
+    ],
+    "folder": "erc20",
+    "type": "components:buidl"
+  },
+  {
+    "name": "erc20-name",
+    "dependencies": [
+      "wagmi"
+    ],
+    "registryDependencies": [
+      "skeleton",
+      "error-message"
+    ],
+    "files": [
+      "buidl/erc20/erc20-name.tsx"
+    ],
+    "folder": "erc20",
+    "type": "components:buidl"
+  },
+  {
+    "name": "erc20-select-and-amount",
+    "dependencies": [
+      "wagmi"
+    ],
+    "files": [
+      "buidl/erc20/erc20-select-and-amount.tsx"
+    ],
+    "folder": "erc20",
+    "type": "components:buidl"
+  },
+  {
+    "name": "erc20-select",
+    "dependencies": [
+      "wagmi"
+    ],
+    "files": [
+      "buidl/erc20/erc20-select.tsx"
+    ],
+    "folder": "erc20",
+    "type": "components:buidl"
+  },
+  {
+    "name": "erc20-symbol",
+    "dependencies": [
+      "wagmi"
+    ],
+    "registryDependencies": [
+      "skeleton",
+      "error-message"
+    ],
+    "files": [
+      "buidl/erc20/erc20-symbol.tsx"
+    ],
+    "folder": "erc20",
+    "type": "components:buidl"
+  },
+  {
+    "name": "erc20-total-supply",
+    "dependencies": [
+      "wagmi"
+    ],
+    "registryDependencies": [
+      "skeleton",
+      "error-message"
+    ],
+    "files": [
+      "buidl/erc20/erc20-total-supply.tsx"
+    ],
+    "folder": "erc20",
+    "type": "components:buidl"
+  },
+  {
+    "name": "erc721-name",
+    "dependencies": [
+      "wagmi"
+    ],
+    "registryDependencies": [
+      "skeleton",
+      "error-message"
+    ],
+    "files": [
+      "buidl/erc721/erc721-name.tsx"
+    ],
+    "folder": "erc721",
+    "type": "components:buidl"
+  },
+  {
+    "name": "erc721-symbol",
+    "dependencies": [
+      "wagmi"
+    ],
+    "registryDependencies": [
+      "skeleton",
+      "error-message"
+    ],
+    "files": [
+      "buidl/erc721/erc721-symbol.tsx"
+    ],
+    "folder": "erc721",
+    "type": "components:buidl"
+  },
+  {
+    "name": "erc721-owner-of",
+    "dependencies": [
+      "wagmi"
+    ],
+    "registryDependencies": [
+      "skeleton",
+      "error-message"
+    ],
+    "files": [
+      "buidl/erc721/erc721-owner-of.tsx"
+    ],
+    "folder": "erc721",
+    "type": "components:buidl"
+  },
+  {
+    "name": "erc721-total-supply",
+    "dependencies": [
+      "wagmi"
+    ],
+    "registryDependencies": [
+      "skeleton",
+      "error-message"
+    ],
+    "files": [
+      "buidl/erc721/erc721-total-supply.tsx"
+    ],
+    "folder": "erc721",
+    "type": "components:buidl"
+  },
+  {
+    "name": "erc721-token-uri",
+    "dependencies": [
+      "wagmi"
+    ],
+    "registryDependencies": [
+      "skeleton",
+      "error-message"
+    ],
+    "files": [
+      "buidl/erc721/erc721-token-uri.tsx"
+    ],
+    "folder": "erc721",
+    "type": "components:buidl"
+  },
+  {
+    "name": "erc721-metadata",
+    "dependencies": [
+      "wagmi"
+    ],
+    "registryDependencies": [
+      "skeleton",
+      "error-message"
+    ],
+    "files": [
+      "buidl/erc721/erc721-metadata.tsx"
+    ],
+    "folder": "erc721",
+    "type": "components:buidl"
+  },
+  {
+    "name": "error-message",
+    "dependencies": [
+      "wagmi"
+    ],
+    "files": [
+      "buidl/error-message.tsx"
+    ],
+    "type": "components:buidl"
+  },
+  {
+    "name": "network-selection",
+    "dependencies": [
+      "wagmi"
+    ],
+    "registryDependencies": [
+      "dropdown-menu"
+    ],
+    "files": [
+      "buidl/network-selection.tsx"
+    ],
+    "type": "components:buidl"
+  },
+  {
+    "name": "button",
+    "dependencies": [
+      "@radix-ui/react-slot"
+    ],
+    "files": [
+      "ui/button.tsx"
+    ],
+    "type": "components:ui"
+  },
+  {
+    "name": "card",
+    "files": [
+      "ui/card.tsx"
+    ],
+    "type": "components:ui"
+  },
+  {
+    "name": "input",
+    "files": [
+      "ui/input.tsx"
+    ],
+    "type": "components:ui"
+  },
+  {
+    "name": "label",
+    "files": [
+      "ui/label.tsx"
+    ],
+    "type": "components:ui"
+  },
+  {
+    "name": "select",
+    "dependencies": [
+      "@radix-ui/react-select"
+    ],
+    "files": [
+      "ui/select.tsx"
+    ],
+    "type": "components:ui"
+  },
+  {
+    "name": "dialog",
+    "dependencies": [
+      "@radix-ui/react-dialog"
+    ],
+    "files": [
+      "ui/dialog.tsx"
+    ],
+    "type": "components:ui"
+  },
+  {
+    "name": "toast",
+    "dependencies": [
+      "@radix-ui/react-toast"
+    ],
+    "files": [
+      "ui/toast.tsx",
+      "ui/use-toast.ts",
+      "ui/toaster.tsx"
+    ],
+    "type": "components:ui"
+  },
+  {
+    "name": "skeleton",
+    "files": [
+      "ui/skeleton.tsx"
+    ],
+    "type": "components:ui"
+  },
+  {
+    "name": "dropdown-menu",
+    "files": [
+      "ui/dropdown-menu.tsx"
+    ],
+    "type": "components:ui"
+  }
+]

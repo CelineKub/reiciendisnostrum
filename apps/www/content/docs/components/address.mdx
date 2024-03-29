@@ -1,0 +1,71 @@
+---
+title: Address
+description: Manage the display of an address.
+component: true
+wagmi:
+  link: https://wagmi.sh/react/hooks/useNetwork
+---
+
+<ComponentPreview
+  name="address-demo"
+  className="[&_.preview>[data-orientation=vertical]]:sm:max-w-[70%]"
+/>
+
+## Installation
+
+<Tabs defaultValue="cli">
+
+<TabsList>
+  <TabsTrigger value="cli">CLI</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
+
+```bash
+npx buidl-cli@latest add address
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps>
+
+<Step>Install the following shadcn/ui components:</Step>
+
+- [Toast](https://ui.shadcn.com/docs/components/toast)
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="address" />
+
+</Steps>
+
+</TabsContent>
+
+</Tabs>
+
+## Usage
+
+```tsx
+import {
+  Address,
+  AddressCopy,
+  AddressLink,
+} from "@/registry/default/buidl/address"
+```
+
+```tsx
+<Address address={"0x761d584f1C2d43cBc3F42ECd739701a36dFFAa31"} />
+
+<Address link address={"0x761d584f1C2d43cBc3F42ECd739701a36dFFAa31"} />
+<AddressLink address={"0x761d584f1C2d43cBc3F42ECd739701a36dFFAa31"} />
+
+<Address copy address={"0x761d584f1C2d43cBc3F42ECd739701a36dFFAa31"} />
+<AddressCopy address={"0x761d584f1C2d43cBc3F42ECd739701a36dFFAa31"} />
+
+<Address truncate address={"0x761d584f1C2d43cBc3F42ECd739701a36dFFAa31"} />
+
+<Address link copy truncate address={"0x761d584f1C2d43cBc3F42ECd739701a36dFFAa31"} />
+```

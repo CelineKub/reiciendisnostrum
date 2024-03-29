@@ -1,0 +1,52 @@
+---
+title: Error Message
+description: Generic error message component.
+component: true
+---
+
+<ComponentPreview
+  name="error-message-demo"
+  className="[&_.preview>[data-orientation=vertical]]:sm:max-w-[70%]"
+/>
+
+## Installation
+
+<Tabs defaultValue="cli">
+
+<TabsList>
+  <TabsTrigger value="cli">CLI</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
+
+```bash
+npx buidl-cli@latest add error-message
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps>
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="error-message" />
+
+</Steps>
+
+</TabsContent>
+
+</Tabs>
+
+## Usage
+
+```tsx
+import { EnsName } from "@/components/buidl/error-message"
+```
+
+```tsx
+<EnsName />
+<EnsName address="0x0000000000000000000000000000000000000000" />
+```

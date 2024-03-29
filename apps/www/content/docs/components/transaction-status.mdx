@@ -1,0 +1,61 @@
+---
+title: Transaction Status
+description: Displays the status of a transaction
+component: true
+wagmi:
+  link: https://wagmi.sh/react/hooks/useWaitForTransaction
+---
+
+<ComponentPreview
+  name="transaction-status-demo"
+  className="[&_.preview>[data-orientation=vertical]]:sm:max-w-[70%]"
+/>
+
+## Installation
+
+<Tabs defaultValue="cli">
+
+<TabsList>
+  <TabsTrigger value="cli">CLI</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
+
+```bash
+npx buidl-cli@latest add transaction-status
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps>
+
+<Step>Install the following components:</Step>
+
+- [ErrorMessage](/docs/components/error-message)
+
+<Step>Install the following shadcn/ui components:</Step>
+
+- [Skeleton](https://ui.shadcn.com/docs/components/skeleton)
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="transaction-status" />
+
+</Steps>
+
+</TabsContent>
+
+</Tabs>
+
+## Usage
+
+```tsx
+import { TransactionStatus } from "@/registry/default/buidl/transaction-status"
+```
+
+```tsx
+<TransactionStatus hash="0x3e2ba590d81b64282ce7a3b20b1913b4c6dde05345a058b18bfef5717bc09c5e" />
+```

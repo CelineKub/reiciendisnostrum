@@ -1,0 +1,59 @@
+---
+title: ENS Name
+description: Display an account ENS domain name.
+component: true
+wagmi:
+  link: https://wagmi.sh/react/hooks/useEnsName
+---
+
+<ComponentPreview
+  name="ens-name-demo"
+  className="[&_.preview>[data-orientation=vertical]]:sm:max-w-[70%]"
+/>
+
+## Installation
+
+<Tabs defaultValue="cli">
+
+<TabsList>
+  <TabsTrigger value="cli">CLI</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
+
+```bash
+npx buidl-cli@latest add ens-name
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps>
+
+<Step>Install the following components:</Step>
+
+- [Address](/docs/components/address)
+- [Skeleton](https://ui.shadcn.com/docs/components/skeleton)
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="ens-name" />
+
+</Steps>
+
+</TabsContent>
+
+</Tabs>
+
+## Usage
+
+```tsx
+import { EnsName } from "@/components/buidl/ens-name"
+```
+
+```tsx
+<EnsName />
+<EnsName address="0x0000000000000000000000000000000000000000" />
+```

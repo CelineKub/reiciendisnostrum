@@ -1,0 +1,64 @@
+---
+title: ERC721 Owner Of
+description: Display the owner of an ERC721 token
+component: true
+wagmi:
+  link: https://wagmi.sh/react/hooks/useContractRead
+---
+
+<ComponentPreview
+  name="erc721-owner-of-demo"
+  className="[&_.preview>[data-orientation=vertical]]:sm:max-w-[70%]"
+/>
+
+## Installation
+
+<Tabs defaultValue="cli">
+
+<TabsList>
+  <TabsTrigger value="cli">CLI</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
+
+```bash
+npx buidl-cli@latest add erc721-owner-of
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps>
+
+<Step>Install the following components:</Step>
+
+- [ErrorMessage](/docs/components/error-message)
+
+<Step>Install the following shadcn/ui components:</Step>
+
+- [Skeleton](https://ui.shadcn.com/docs/components/skeleton)
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="erc721-owner-of" />
+
+</Steps>
+
+</TabsContent>
+
+</Tabs>
+
+## Usage
+
+```tsx
+import { Erc721OwnerOf } from "@/registry/default/buidl/erc721/erc721-owner-of"
+```
+
+```tsx
+<Erc721OwnerOf
+  tokenId={1}
+  address="0x0000000000000000000000000000000000000000"
+/>
+```

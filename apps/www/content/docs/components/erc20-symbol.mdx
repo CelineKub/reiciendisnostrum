@@ -1,0 +1,61 @@
+---
+title: ERC20 Symbol
+description: Display the symbol of an ERC20 token
+component: true
+wagmi:
+  link: https://wagmi.sh/react/hooks/useContractRead
+---
+
+<ComponentPreview
+  name="erc20-symbol-demo"
+  className="[&_.preview>[data-orientation=vertical]]:sm:max-w-[70%]"
+/>
+
+## Installation
+
+<Tabs defaultValue="cli">
+
+<TabsList>
+  <TabsTrigger value="cli">CLI</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
+
+```bash
+npx buidl-cli@latest add erc20-symbol
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps>
+
+<Step>Install the following components:</Step>
+
+- [ErrorMessage](/docs/components/error-message)
+
+<Step>Install the following shadcn/ui components:</Step>
+
+- [Skeleton](https://ui.shadcn.com/docs/components/skeleton)
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="erc20-symbol" />
+
+</Steps>
+
+</TabsContent>
+
+</Tabs>
+
+## Usage
+
+```tsx
+import { Erc20Symbol } from "@/components/buidl/erc20-symbol"
+```
+
+```tsx
+<Erc20Symbol address="0x0000000000000000000000000000000000000000" />
+```

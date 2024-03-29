@@ -1,0 +1,56 @@
+---
+title: Block Explorer Link
+description: Link to an address or transaction to the block explorer of a given network.
+component: true
+wagmi:
+  link: https://wagmi.sh/react/hooks/useNetwork
+---
+
+<ComponentPreview
+  name="block-explorer-link-demo"
+  className="[&_.preview>[data-orientation=vertical]]:sm:max-w-[70%]"
+/>
+
+## Installation
+
+<Tabs defaultValue="cli">
+
+<TabsList>
+  <TabsTrigger value="cli">CLI</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
+
+```bash
+npx buidl-cli@latest add block-explorer-link
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps>
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="block-explorer-link" />
+
+</Steps>
+
+</TabsContent>
+
+</Tabs>
+
+## Usage
+
+```tsx
+import { BlockExplorerLink } from "@/registry/default/buidl/block-explorer-link"
+```
+
+```tsx
+<BlockExplorerLink data={"0x761d584f1C2d43cBc3F42ECd739701a36dFFAa31"} />
+<BlockExplorerLink data={"0x761d584f1C2d43cBc3F42ECd739701a36dFFAa31"} showBlockExplorerName />
+<BlockExplorerLink data={"0x761d584f1C2d43cBc3F42ECd739701a36dFFAa31"}>Go to Block Explorer</BlockExplorerLink>
+<BlockExplorerLink type="tx" data="0x827069d50d3a5ec0d19327f4b1bb1ecfbe939ef26bc3b6cc2dae5a1574f1e6f8"/>
+```

@@ -1,0 +1,59 @@
+---
+title: Wallet Connect
+description: Connect to a wallet provider or service.
+component: true
+wagmi:
+  link: https://wagmi.sh/react/hooks/useConnect
+---
+
+<ComponentPreview
+  name="wallet-connect-demo"
+  className="[&_.preview>[data-orientation=vertical]]:sm:max-w-[70%]"
+/>
+
+## Installation
+
+<Tabs defaultValue="cli">
+
+<TabsList>
+  <TabsTrigger value="cli">CLI</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
+
+```bash
+npx buidl-cli@latest add wallet-connect
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps>
+
+<Step>Install the following shadcn/ui components:</Step>
+
+- [Button](https://ui.shadcn.com/docs/components/button)
+- [Dialog](https://ui.shadcn.com/docs/components/dialog)
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="wallet-connect" />
+
+</Steps>
+
+</TabsContent>
+
+</Tabs>
+
+## Usage
+
+```tsx
+import { WalletConnect } from "@/components/buidl/wallet-connect"
+```
+
+```tsx
+<WalletConnect />
+<WalletConnect>Custom Text</WalletConnect>
+```

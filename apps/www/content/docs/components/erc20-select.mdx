@@ -1,0 +1,51 @@
+---
+title: ERC20 Select
+description: Select an ERC20 token from a list of tokens.
+component: true
+---
+
+<ComponentPreview
+  name="erc20-select-demo"
+  className="[&_.preview>[data-orientation=vertical]]:sm:max-w-[70%]"
+/>
+
+## Installation
+
+<Tabs defaultValue="cli">
+
+<TabsList>
+  <TabsTrigger value="cli">CLI</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
+
+```bash
+npx buidl-cli@latest add erc20-select
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps>
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="erc20-select" />
+
+</Steps>
+
+</TabsContent>
+
+</Tabs>
+
+## Usage
+
+```tsx
+import { Erc20Select } from "@/components/buidl/erc20-select"
+```
+
+```tsx
+<Erc20Select />
+```

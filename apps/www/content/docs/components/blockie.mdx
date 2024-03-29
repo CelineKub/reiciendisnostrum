@@ -1,0 +1,63 @@
+---
+title: Blockie
+description: Display an account blockie identicon.
+component: true
+wagmi:
+  link: https://wagmi.sh/react/hooks/useAccount
+---
+
+<ComponentPreview
+  name="blockie-demo"
+  className="[&_.preview>[data-orientation=vertical]]:sm:max-w-[70%]"
+/>
+
+## Installation
+
+<Tabs defaultValue="cli">
+
+<TabsList>
+  <TabsTrigger value="cli">CLI</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
+
+```bash
+npx buidl-cli@latest add blockie
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps>
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm add ethereum-blockies-base64
+```
+
+<Step>Install the following shadcn/ui components:</Step>
+
+- [Skeleton](https://ui.shadcn.com/docs/components/skeleton)
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="blockie" />
+
+</Steps>
+
+</TabsContent>
+
+</Tabs>
+
+## Usage
+
+```tsx
+import { Blockie } from "@/components/buidl/blockie"
+```
+
+```tsx
+<Blockie address="0x0000000000000000000000000000000000000000" />
+```
